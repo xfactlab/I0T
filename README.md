@@ -101,14 +101,14 @@ cd scripts
 bash train.sh
 ```
 
-After training, please include your checkpoint file name in this [text file](https://github.com/xfactlab/VisLang/blob/main/configs/ckpt_file_name.txt) to post-train.
+After training, please include your checkpoint file name in this [text file](https://github.com/xfactlab/I0T/blob/main/configs/ckpt_file_name.txt) to post-train.
 
 
-## 5. ``Evaluation``
+## 4. ``Evaluation``
 
 ### Retrieval
 
-Running the script below will save the tensors needed to visualize embeddings on 3D sphere.
+Running the script below will save the tensors needed to visualize embeddings on the 3D sphere.
 
 ```
 mkdir tensors # default output_folder of the below script
@@ -129,7 +129,7 @@ bash evaluate_classification.sh
 mkdir Github
 cd Github
 git clone https://github.com/aimagelab/pacscore.git
-scp evaluation/pac_score.py ~/VisLang/Github/pacscore/evaluation/pac_score/ # overwrite
+scp evaluation/pac_score.py ~/I0T/Github/pacscore/evaluation/pac_score/ # overwrite
 cd scripts
 bash evaluate_correlation.sh
 ```
